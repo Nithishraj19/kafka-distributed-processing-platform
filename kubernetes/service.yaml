@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kafka-processing-worker
+spec:
+  selector:
+    app: kafka-processing-worker
+  ports:
+    - port: 8080
+      targetPort: 8080
